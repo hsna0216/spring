@@ -4,6 +4,10 @@ import org.example.design.adpater.*;
 
 import org.example.design.aop.AopBrowser;
 import org.example.design.decorator.*;
+import org.example.design.facade.Ftp;
+import org.example.design.facade.Reader;
+import org.example.design.facade.SftpClient;
+import org.example.design.facade.Writer;
 import org.example.design.observer.Button;
 import org.example.design.observer.IButtonListener;
 import org.example.design.proxy.Browser;
@@ -104,6 +108,7 @@ public class Main {
         //*********************************************************
         // Observer Pattern
         //*********************************************************
+        /*
         Button button = new Button("버튼");
         button.addListener(new IButtonListener() {
             @Override
@@ -116,6 +121,33 @@ public class Main {
         button.click("메세지 전달 : click2");
         button.click("메세지 전달 : click3");
         button.click("메세지 전달 : click4");
+
+         */
+
+        //*********************************************************
+        // Facade Pattern
+        //*********************************************************
+        // Facade Pattern 사용 X
+        Ftp ftpClient = new Ftp("www.foo.co.kr", 22, "/home/etc");
+
+        Writer writer = new Writer("text.tmp");
+        writer.fileConnect();
+        writer.write();
+
+        Reader reader = new Reader("text.tmp");
+        reader.fileConnect();
+        reader.fileRead();
+
+        reader.fileDisconnect();
+        writer.fileDisconnect();
+        ftpClient.disConnect();
+
+
+        SftpClient sftpClient = new SftpClient("www.foo.co.kr", 22, "/home/etc", "text.tmp");
+        sftpClient.connect();
+        sftpClient.write();
+        sftpClient.read();
+        sftpClient.disConnect();
     }
 
     public static void connect(Electronic110V electronic110V){
