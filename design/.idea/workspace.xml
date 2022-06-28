@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b82f5ac-a772-4620-8df1-043a2d7ecf32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/singleton/Aclazz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/singleton/Bclazz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/singleton/SocketClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +37,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/WorkspaceIntelliJ/SpringRepo/design",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.design.Main" />
@@ -74,6 +73,7 @@
       <workItem from="1656320607712" duration="1106000" />
       <workItem from="1656321755918" duration="273000" />
       <workItem from="1656322059493" duration="230000" />
+      <workItem from="1656394523507" duration="95000" />
     </task>
     <servers />
   </component>
