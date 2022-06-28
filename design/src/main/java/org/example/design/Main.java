@@ -4,6 +4,8 @@ import org.example.design.adpater.*;
 
 import org.example.design.aop.AopBrowser;
 import org.example.design.decorator.*;
+import org.example.design.observer.Button;
+import org.example.design.observer.IButtonListener;
 import org.example.design.proxy.Browser;
 import org.example.design.proxy.BrowserProxy;
 import org.example.design.proxy.IBrowser;
@@ -98,6 +100,22 @@ public class Main {
         // a5
         ICar audi5 = new A5(audi, "A5");
         audi5.showPrice();
+
+        //*********************************************************
+        // Observer Pattern
+        //*********************************************************
+        Button button = new Button("버튼");
+        button.addListener(new IButtonListener() {
+            @Override
+            public void clickEvent(String event) {
+                System.out.println(event);
+            }
+        });
+
+        button.click("메세지 전달 : click1");
+        button.click("메세지 전달 : click2");
+        button.click("메세지 전달 : click3");
+        button.click("메세지 전달 : click4");
     }
 
     public static void connect(Electronic110V electronic110V){
