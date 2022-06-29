@@ -5,11 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b82f5ac-a772-4620-8df1-043a2d7ecf32" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/facade/Ftp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/facade/Reader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/facade/SftpClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/facade/Writer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/strategy/AppendStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/strategy/Base64Strategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/strategy/Encoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/strategy/EncodingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/strategy/NormalStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/design/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/design/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/design/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +103,9 @@
       <workItem from="1656396414151" duration="374000" />
       <workItem from="1656396818006" duration="136000" />
       <workItem from="1656396981890" duration="1047000" />
-      <workItem from="1656398064182" duration="6703000" />
+      <workItem from="1656398064182" duration="9024000" />
+      <workItem from="1656468153989" duration="1580000" />
+      <workItem from="1656475485221" duration="710000" />
     </task>
     <servers />
   </component>

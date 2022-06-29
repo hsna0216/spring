@@ -16,6 +16,7 @@ import org.example.design.proxy.IBrowser;
 import org.example.design.singleton.Aclazz;
 import org.example.design.singleton.Bclazz;
 import org.example.design.singleton.SocketClient;
+import org.example.design.strategy.*;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -148,6 +149,30 @@ public class Main {
         sftpClient.write();
         sftpClient.read();
         sftpClient.disConnect();
+
+        //*********************************************************
+        // Strategy Pattern
+        //*********************************************************
+        Encoder encoder = new Encoder();
+
+        //base64
+        EncodingStrategy base64 = new Base64Strategy();
+
+        // normal
+        EncodingStrategy normal = new NormalStrategy();
+
+        String message = "hello java";
+        encoder.setEncodingStrategy(base64);
+        String base64Result = encoder.getMessage(message);
+        System.out.println(base64Result);
+
+        encoder.setEncodingStrategy(normal);
+        String normalResult = encoder.getMessage(message);
+        System.out.println(normalResult);
+
+        encoder.setEncodingStrategy(new AppendStrategy());
+        String appendResult = encoder.getMessage(message);
+        System.out.println(appendResult);
     }
 
     public static void connect(Electronic110V electronic110V){
